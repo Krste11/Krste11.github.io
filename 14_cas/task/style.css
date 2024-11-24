@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    width: 800px;
+    height: 800px;
+    background-color: black;
+}
+
+.element1 {
+    width: 30%;
+    height: 10%;
+    background-color: lightblue;
+    border: solid 5px black;
+    float: left;
+}
+
+.element2 {
+    width: 40%;
+    height: 10%;
+    background-color: wheat;
+    border: solid 5px black;
+    float: left;
+}
+
+.element3 {
+    width: 30%;
+    height: 10%;
+    background-color: rgb(247, 189, 81);
+    border: solid 5px black;
+    float: left;
+}
+
+.element4 {
+    height: 25%;
+    width: 10%;
+    background-color: white;
+    border: solid 5px black;
+    float: left;
+}
+
+.element5 {
+    height: 50%;
+    width: 50%;
+    background-color: red;
+    border: solid 5px black;
+    float: left;
+}
+
+.element6 {
+    width: 40%;
+    height: 25%;
+    background-color: wheat;
+    border: solid 5px black;
+    float: left;
+}
+
+.element7 {
+    width: 20%;
+    height: 25%;
+    background-color: wheat;
+    border: solid 5px black;
+    float: left;
+}
+
+.element8 {
+    width: 20%;
+    height: 25%;
+    background-color: wheat;
+    border: solid 5px black;
+    float: left;
+}
+
+.element9 {
+    width: 10%;
+    height: 35%;
+    background-color: wheat;
+    border: solid 5px black;
+    margin-top: -200px;
+    float: left;
+}
+
+.element10 {
+    width: 30%;
+    height: 25%;
+    background-color: black;
+    border: solid 5px black;
+    float: left;
+}
+
+.element11 {
+    width: 30%;
+    height: 10%;
+    background-color: gray;
+    border: solid 5px black;
+    float: left;
+}
+
+.element12 {
+    width: 30%;
+    height: 10%;
+    background-color: white;
+    border: solid 5px black;
+    float: left;
+}
+
+.element13 {
+    width: 30%;
+    height: 10%;
+    background-color: white;
+    border: solid 5px black;
+    float: left;
+}
