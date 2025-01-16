@@ -1,0 +1,4 @@
+Colors
+-Pale blue ( #e2f7fc )
+-royal blue ( #4A8BDF )
+-eggplant ( #A0006D )
