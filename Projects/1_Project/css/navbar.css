@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e2f7fc;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbarPosition {
+    position: fixed;
+    width: 100%;
+    border-bottom: 3px solid #7fd8ee;
+}
+
+#cart {
+    position: fixed;
+    right: 10px;
+    top: 7px;
+    font-size: 30px;
+    z-index: 1050;
+}
+
+nav {
+    background-color: #4A8BDF;
+}
+
+li {
+    margin-left: 7px;
+}
+
+#logo {
+    color: #e2f7fc;
+}
+
+#buttonsNavBar {
+    color: #e2f7fc;
+}
+
+#buttonsNavBarActive {
+    color: #7fd8ee;
+}
+
+#buttonsNavBar:hover {
+    color: #7fd8ee;
+}
+
+.fa-shopping-cart {
+    color: #e2f7fc;
+    transition: color 0.3s ease;
+}
+
+.fa-shopping-cart:hover {
+    color: #7fd8ee;
+}
+
+
+#button {
+    position: fixed;
+    right: 25px;
+    top: 7px;
+    background-color: #e2f7fc;
+    border-color: #e2f7fc;
+    transition: border-color 0.3s ease;
+    border-width: 3px;
+    outline: 0;
+}
+
+#button .navbar-toggler-icon {
+    background-color: #e2f7fc;
+}
+
+#button:hover {
+    border-color: #7fd8ee;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+@media (max-width: 990px) {
+    #cart {
+        position: fixed;
+        right: 10px;
+        top: 7px;
+        font-size: 30px;
+        z-index: 1050;
+        font-size: 20px;
+        font-size: 30px;
+    }
+
+    #button {
+        margin-left: auto;
+        margin-right: 30px;
+    }
+}
+
+#bottomSide {
+    margin-bottom: -50px;
+}
+
+#logoImg {
+    width: 70px;
+}
