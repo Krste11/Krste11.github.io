@@ -3,6 +3,7 @@ drop database if exists [SedcAcademy]
 create database [SedcAcademy]
 
 use [SedcAcademy]
+go
 
 create table Student(
 	Id int identity(1,1),
