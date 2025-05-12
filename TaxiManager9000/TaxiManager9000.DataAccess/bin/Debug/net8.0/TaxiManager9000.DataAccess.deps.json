@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TaxiManager9000.DataAccess/1.0.0": {
+        "dependencies": {
+          "TaxiManager9000.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TaxiManager9000.DataAccess.dll": {}
+        }
+      },
+      "TaxiManager9000.Domain/1.0.0": {
+        "runtime": {
+          "TaxiManager9000.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TaxiManager9000.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TaxiManager9000.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

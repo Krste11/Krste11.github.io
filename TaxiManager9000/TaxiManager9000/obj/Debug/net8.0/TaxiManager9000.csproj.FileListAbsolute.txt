@@ -1,0 +1,15 @@
+C:\Users\Angel\Desktop\C# Adnaced\excersice\TaxiManager9000\TaxiManager9000\bin\Debug\net8.0\TaxiManager9000.exe
+C:\Users\Angel\Desktop\C# Adnaced\excersice\TaxiManager9000\TaxiManager9000\bin\Debug\net8.0\TaxiManager9000.deps.json
+C:\Users\Angel\Desktop\C# Adnaced\excersice\TaxiManager9000\TaxiManager9000\bin\Debug\net8.0\TaxiManager9000.runtimeconfig.json
+C:\Users\Angel\Desktop\C# Adnaced\excersice\TaxiManager9000\TaxiManager9000\bin\Debug\net8.0\TaxiManager9000.dll
+C:\Users\Angel\Desktop\C# Adnaced\excersice\TaxiManager9000\TaxiManager9000\bin\Debug\net8.0\TaxiManager9000.pdb
+C:\Users\Angel\Desktop\C# Adnaced\excersice\TaxiManager9000\TaxiManager9000\obj\Debug\net8.0\TaxiManager9000.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel\Desktop\C# Adnaced\excersice\TaxiManager9000\TaxiManager9000\obj\Debug\net8.0\TaxiManager9000.AssemblyInfoInputs.cache
+C:\Users\Angel\Desktop\C# Adnaced\excersice\TaxiManager9000\TaxiManager9000\obj\Debug\net8.0\TaxiManager9000.AssemblyInfo.cs
+C:\Users\Angel\Desktop\C# Adnaced\excersice\TaxiManager9000\TaxiManager9000\obj\Debug\net8.0\TaxiManager9000.csproj.CoreCompileInputs.cache
+C:\Users\Angel\Desktop\C# Adnaced\excersice\TaxiManager9000\TaxiManager9000\obj\Debug\net8.0\TaxiManager9000.dll
+C:\Users\Angel\Desktop\C# Adnaced\excersice\TaxiManager9000\TaxiManager9000\obj\Debug\net8.0\refint\TaxiManager9000.dll
+C:\Users\Angel\Desktop\C# Adnaced\excersice\TaxiManager9000\TaxiManager9000\obj\Debug\net8.0\TaxiManager9000.pdb
+C:\Users\Angel\Desktop\C# Adnaced\excersice\TaxiManager9000\TaxiManager9000\obj\Debug\net8.0\TaxiManager9000.genruntimeconfig.cache
+C:\Users\Angel\Desktop\C# Adnaced\excersice\TaxiManager9000\TaxiManager9000\obj\Debug\net8.0\ref\TaxiManager9000.dll
+C:\Users\Angel\Desktop\C# Adnaced\excersice\TaxiManager9000\TaxiManager9000\obj\Debug\net8.0\TaxiManager9000.csproj.AssemblyReference.cache
