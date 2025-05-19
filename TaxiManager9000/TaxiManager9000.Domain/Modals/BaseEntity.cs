@@ -1,8 +1,0 @@
-﻿namespace TaxiManager9000.Domain.Modals
-{
-    public abstract class BaseEntity
-    {
-        public int Id { get; set; }
-        public abstract string Print();
-    }
-}
