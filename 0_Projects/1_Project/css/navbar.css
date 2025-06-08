@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-1);
+  display: flex;
+  flex-direction: column;
+}
+
+.navbarPosition {
+  position: fixed;
+  width: 100%;
+  border-bottom: 3px solid var(--color-2);
+}
+
+#cart {
+  position: fixed;
+  right: 60px;
+  top: 10px;
+  font-size: 30px;
+  z-index: 1050;
+  color: var(--color-1);
+  transition: color 0.3s ease;
+  margin-right: -50px;
+}
+
+#cart:hover {
+  color: var(--hover-1);
+}
+
+nav {
+  background-color: var(--color-3);
+}
+
+nav li,
+nav #buttonsNavBar,
+nav #buttonsNavBarActive {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+nav #buttonsNavBarActive {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+nav #logo {
+  color: var(--color-1);
+}
+
+nav #buttonsNavBar {
+  color: var(--color-1);
+  font-family: 'Roboto', sans-serif;
+
+}
+
+nav #buttonsNavBarActive {
+  color: var(--color-2);
+}
+
+nav #buttonsNavBarActive:hover {
+  color: var(--color-2);
+}
+
+nav #buttonsNavBar:hover {
+  color: var(--hover-1);
+  transition: color 0.2s ease;
+}
+
+nav .fa-shopping-cart {
+  font-size: 1.7rem;
+}
+
+nav #button {
+  position: fixed;
+  right: 25px;
+  top: 10px;
+  background-color: var(--color-2);
+  border-color: var(--color-2);
+  transition: border-color 0.3s ease;
+  border-width: 3px;
+  outline: 0;
+}
+
+nav #button:active {
+  outline: none;
+  box-shadow: none;
+}
+
+nav #button .navbar-toggler-icon {
+  background-color: var(--color-2);
+}
+
+nav #button:hover {
+  border-color: var(--hover-2);
+}
+
+nav ul,
+nav li {
+  list-style-type: none;
+}
+
+@media (max-width: 990px) {
+  #cart {
+    position: fixed;
+    right: 60px;
+    top: 10px;
+    font-size: 30px;
+    z-index: 1050;
+    color: var(--color-1);
+    transition: color 0.3s ease;
+    margin-right: -50px;
+  }
+
+  nav #button {
+    margin-left: auto;
+    margin-right: 30px;
+  }
+}
+
+#bottomSide {
+  margin-bottom: -50px;
+}
+
+nav #logoImg {
+  width: 70px;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  color: var(--color-2);
+  font-size: 1.7rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color: var(--color-1);
+}
+
+#activeBtn {
+  color: var(--color-2);
+}

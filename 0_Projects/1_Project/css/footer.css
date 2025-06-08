@@ -1,0 +1,134 @@
+.footer {
+  background: linear-gradient(135deg, var(--color-1), var(--color-2));
+  color: var(--color-3);
+  border-top: 5px solid var(--color-3);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+}
+
+.footer a {
+  color: var(--color-3);
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s, letter-spacing 0.3s;
+  font-weight: 500;
+  font-size: 1.1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.footer a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--hover-3);
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer a:hover::after {
+  width: 100%;
+}
+
+.footer-social a::after {
+  content: none; /* Remove underline for social icons */
+}
+
+.footer a:hover {
+  color: var(--hover-3);
+  transform: translateY(-3px) scale(1.05);
+  letter-spacing: 0.5px;
+}
+
+.footer h5 {
+  color: var(--color-3);
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  transition: transform 0.3s;
+}
+
+.footer h5:hover {
+  transform: scale(1.05);
+}
+
+.footer-contact a,
+.footer-contact p {
+  color: var(--color-3);
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.footer-contact a:hover {
+  color: var(--hover-3);
+}
+
+.footer-links {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contact {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-social div {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social a {
+  color: #ffffff;
+  background-color: var(--color-3);
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.footer-social a:hover {
+  background-color: var(--hover-3);
+  transform: scale(1.15) rotate(5deg);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+.footer p {
+  margin-bottom: 0;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+}
+
+.footer p:hover {
+  opacity: 0.8;
+}
+
+.footer .container {
+  padding: 20px 0;
+}
+
+@media (max-width: 767px) {
+  .footer .row > div {
+    margin-bottom: 20px;
+    align-items: center !important;
+  }
+
+  .footer-social {
+    align-items: center !important;
+  }
+}

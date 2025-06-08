@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+:root {
+    --color-1: #CEE6F2;
+    /* Soft Lavender / Lilac */
+    --color-2: #E3867D;
+    /* Lively Coral Pink */
+    --color-3: #962E2A;
+    /* Vibrant Mint / Aqua */
+
+    --hover-1: #a7ccdf;
+    /* Slightly darker Soft Lavender for hover */
+    --hover-2: #cc6f68;
+    /* Slightly darker Coral Pink for hover */
+    --hover-3: #7c2320;
+    /* Deeper shade of the Accent color for hover */
+}
+
+/* Luxurious font */
+body,
+.container1,
+.modal-content {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-3);
+}
+
+/* Container with animated gradient and shadow */
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    gap: 2rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5rem 3rem;
+    border-radius: 18px;
+    background: linear-gradient(135deg, var(--color-1), #d4e9f7, #c1dff2);
+    box-shadow:
+        0 0 25px 5px rgba(227, 134, 125, 0.5),
+        inset 0 0 20px rgba(150, 46, 42, 0.15);
+    transition: box-shadow 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle glow on hover */
+.container1:hover {
+    box-shadow:
+        0 0 40px 10px rgba(227, 134, 125, 0.7),
+        inset 0 0 30px rgba(150, 46, 42, 0.3);
+}
+
+/* Animated underline for welcome message */
+#welcomeMessage {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1.3px;
+    position: relative;
+    color: var(--color-3);
+    padding-bottom: 8px;
+}
+
+#welcomeMessage::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-2), var(--color-3));
+    bottom: 0;
+    left: 50%;
+    transition: 0.5s ease;
+    border-radius: 3px;
+}
+
+.container1:hover #welcomeMessage::after {
+    width: 60%;
+    left: 20%;
+}
+
+/* Buttons container */
+.container1>section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.3rem;
+}
+
+/* Fancy buttons with gradient, shadow and smooth scale */
+.container1 button.btn {
+    background: linear-gradient(135deg, var(--color-2), var(--color-3));
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.15rem;
+    padding: 0.85rem 0;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    box-shadow:
+        0 6px 15px rgba(227, 134, 125, 0.6);
+    letter-spacing: 1.1px;
+    transition:
+        background 0.35s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    user-select: none;
+    text-transform: uppercase;
+}
+
+/* Hover effect: brighter gradient + scale */
+.container1 button.btn:hover {
+    background: linear-gradient(135deg, var(--hover-2), var(--hover-3));
+    box-shadow:
+        0 8px 25px rgba(204, 111, 104, 0.85);
+    transform: scale(1.07);
+}
+
+/* Focus effect for accessibility */
+.container1 button.btn:focus {
+    outline: 2px solid var(--color-3);
+    outline-offset: 3px;
+    transform: scale(1.05);
+}
+
+/* Modal fade + scale animation */
+.modal.fade .modal-dialog {
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.modal.fade.show .modal-dialog {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Modal dialog centered with shadow */
+.modal-dialog {
+    max-width: 480px;
+    margin: 1.75rem auto;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow:
+        0 12px 40px rgba(150, 46, 42, 0.6);
+    background: transparent;
+}
+
+/* Modal content with gradient and smooth shadow */
+.modal-content {
+    background: linear-gradient(135deg, var(--color-1), #d9e8f9, #c5def3);
+    border-radius: 18px;
+    box-shadow:
+        inset 0 0 25px rgba(227, 134, 125, 0.15),
+        0 0 30px rgba(150, 46, 42, 0.35);
+    color: var(--color-3);
+    padding: 1.5rem 1.75rem;
+    position: relative;
+}
+
+/* Modal header with gradient */
+.modal-header {
+    background: linear-gradient(135deg, var(--color-2), var(--color-3));
+    color: white;
+    font-weight: 800;
+    font-size: 1.3rem;
+    letter-spacing: 1.3px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    padding: 1.1rem 1.8rem;
+    box-shadow:
+        0 4px 14px rgba(227, 134, 125, 0.7);
+}
+
+/* Close button with glow */
+.btn-close {
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-close:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 3px var(--hover-3));
+}
+
+/* Modal form styling */
+.modal-body form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 0.5rem 0;
+}
+
+/* Labels */
+.modal-body label {
+    font-weight: 700;
+    color: var(--color-3);
+    letter-spacing: 0.8px;
+}
+
+/* Inputs with smooth border and glow on focus */
+.modal-body input.form-control {
+    border: 2.5px solid var(--color-3);
+    border-radius: 14px;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    color: var(--color-3);
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+    background: transparent;
+    box-shadow: inset 0 0 10px rgba(206, 230, 242, 0.2);
+}
+
+.modal-body input.form-control::placeholder {
+    color: var(--color-3);
+    opacity: 0.6;
+    font-style: italic;
+}
+
+.modal-body input.form-control:focus {
+    border-color: var(--color-2);
+    box-shadow:
+        0 0 12px var(--color-2),
+        inset 0 0 15px var(--color-1);
+    outline: none;
+}
+
+/* Modal footer with spaced buttons */
+.modal-footer {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    background: transparent;
+}
+
+/* Footer buttons with glow and animation */
+.modal-footer button.btn-secondary {
+    background: var(--color-3);
+    color: white;
+    border-radius: 14px;
+    padding: 0.55rem 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    border: none;
+    cursor: pointer;
+    box-shadow:
+        0 0 12px var(--color-3);
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.35s ease,
+        transform 0.2s ease;
+    text-transform: uppercase;
+}
+
+.modal-footer button.btn-secondary:hover {
+    background-color: var(--hover-3);
+    box-shadow:
+        0 0 25px var(--hover-3);
+    transform: scale(1.1);
+}
+
+.modal-footer button.btn-primary {
+    background: linear-gradient(135deg, var(--color-2), var(--color-3));
+    color: white;
+    border-radius: 14px;
+    padding: 0.6rem 1.4rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    border: none;
+    cursor: pointer;
+    box-shadow:
+        0 8px 20px rgba(227, 134, 125, 0.8);
+    transition:
+        background 0.3s ease,
+        box-shadow 0.4s ease,
+        transform 0.25s ease;
+    text-transform: uppercase;
+}
+
+.modal-footer button.btn-primary:hover {
+    background: linear-gradient(135deg, var(--hover-2), var(--hover-3));
+    box-shadow:
+        0 12px 30px rgba(204, 111, 104, 0.95);
+    transform: scale(1.12);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+:root {
+    --color-1: #CEE6F2;
+    /* Soft Lavender / Lilac */
+    --color-2: #E3867D;
+    /* Lively Coral Pink */
+    --color-3: #962E2A;
+    /* Vibrant Mint / Aqua */
+    --hover-1: #a7ccdf;
+    /* Slightly darker Soft Lavender for hover */
+    --hover-2: #cc6f68;
+    /* Slightly darker Coral Pink for hover */
+    --hover-3: #7c2320;
+    /* Deeper shade of the Accent color for hover */
+}
+
+.custom-alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    /* Align items higher: change from center to flex-start */
+    align-items: flex-start;
+    z-index: 10000;
+}
+
+.custom-alert-box {
+    background: var(--color-1);
+    border: 3px solid var(--color-2);
+    border-radius: 15px;
+    padding: 30px 40px;
+    max-width: 400px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-3);
+    box-shadow: 0 0 20px var(--color-2);
+    animation: popupFadeIn 0.3s ease forwards;
+}
+
+.custom-alert-box h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.custom-alert-box button {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px var(--hover-2);
+}
+
+.custom-alert-box button:hover {
+    background-color: var(--hover-2);
+    box-shadow: 0 6px 12px var(--color-3);
+}
+
+@keyframes popupFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+:root {
+    --color-1: #CEE6F2;
+    /* Soft Lavender / Lilac */
+    --color-2: #E3867D;
+    /* Lively Coral Pink */
+    --color-3: #962E2A;
+    /* Vibrant Mint / Aqua */
+    --hover-1: #a7ccdf;
+    /* Slightly darker Soft Lavender for hover */
+    --hover-2: #cc6f68;
+    /* Slightly darker Coral Pink for hover */
+    --hover-3: #7c2320;
+    /* Deeper shade of the Accent color for hover */
+}
+
+.custom-alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.custom-alert-box {
+    background: var(--color-1);
+    border: 3px solid var(--color-2);
+    border-radius: 15px;
+    padding: 30px 40px;
+    max-width: 400px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-3);
+    box-shadow: 0 0 20px var(--color-2);
+    animation: popupFadeIn 0.3s ease forwards;
+}
+
+.custom-alert-box h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.custom-alert-box button {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px var(--hover-2);
+}
+
+.custom-alert-box button:hover {
+    background-color: var(--hover-2);
+    box-shadow: 0 6px 12px var(--color-3);
+}
+
+@keyframes popupFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
