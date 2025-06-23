@@ -1,0 +1,42 @@
+﻿@model IEnumerable<StudentWithCourseDto>
+
+@{
+    string studentTitleHeader = "All Students";
+}
+
+<h2>@studentTitleHeader</h2>
+
+@Html.Partial("_PartialStudentView", Model)
+
+@* <table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Age
+            </th>
+            <th>
+                Name of Course
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (StudentWithCourseDto item in Model)
+        {
+            <tr>
+                <td>
+                    @item.FullName
+                </td>
+                <td>
+                    @item.Age
+                </td>
+                <td>
+                    @item.NameOfCourse
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table> *@
