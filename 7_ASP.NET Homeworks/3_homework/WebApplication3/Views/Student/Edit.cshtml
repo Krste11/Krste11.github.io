@@ -1,0 +1,78 @@
+﻿@using WebApplication3.Models.ViewModals
+
+<form method="post" asp-action="Edit">
+    <input type="hidden" name="Id" value="@Model.Id" />
+
+    <div>
+        <label>First Name</label><br />
+        <input type="text" name="FirstName" value="@Model.FirstName" />
+    </div>
+
+    <div>
+        <label>Last Name</label><br />
+        <input type="text" name="LastName" value="@Model.LastName" />
+    </div>
+
+    <div>
+        <label>Date of Birth</label><br />
+        <input type="date" name="DateOfBirth" value="@Model.DateOfBirth.ToString("yyyy-MM-dd")" />
+    </div>
+
+    <div>
+        <label>Active Course</label><br />
+        <select name="ActiveCourseId">
+            <option value="">-- Select a Course --</option>
+            @foreach (var course in Model.Courses)
+            {
+                if (course.Id == Model.ActiveCourseId)
+                {
+                    <option value="@course.Id" selected="selected">@course.Name</option>
+                }
+                else
+                {
+                    <option value="@course.Id">@course.Name</option>
+                }
+            }
+        </select>
+    </div>
+
+    <button type="submit">Save Changes</button>
+    <a href="/students/all">Cancel</a>
+</form>
+
+
+@* @model EditStudent *@
+@* @using (Html.BeginForm("Edit", "YourControllerName", FormMethod.Post)) *@
+@* { *@
+@*     @Html.HiddenFor(model => model.Id) *@
+
+@*     <div> *@
+@*         @Html.LabelFor(model => model.FirstName) *@
+@*         <br /> *@
+@*         @Html.TextBoxFor(model => model.FirstName) *@
+@*     </div> *@
+
+@*     <div> *@
+@*         @Html.LabelFor(model => model.LastName) *@
+@*         <br /> *@
+@*         @Html.TextBoxFor(model => model.LastName) *@
+@*     </div> *@
+
+@*     <div> *@
+@*         @Html.LabelFor(model => model.DateOfBirth) *@
+@*         <br /> *@
+@*         @Html.TextBoxFor(model => model.DateOfBirth, "{0:yyyy-MM-dd}", new { type = "date" }) *@
+@*     </div> *@
+
+@*     <div> *@
+@*         @Html.LabelFor(model => model.ActiveCourseId) *@
+@*         <br /> *@
+@*         @Html.DropDownListFor(model => model.ActiveCourseId, *@
+@*                 new SelectList(Model.Courses, "Id", "Name", Model.ActiveCourseId), *@
+@*                 "-- Select a Course --" *@
+@*                 ) *@
+@*     </div> *@
+
+@*     <button type="submit">Save Changes</button> *@
+@*     <a href="/students/all">Cancel</a> *@
+@* } *@
