@@ -1,0 +1,29 @@
+﻿@using RentalOnlineStore.Domain.DomainModals
+@model IEnumerable<Movie>
+
+<h1>Movie Catalog</h1>
+
+<div class="row">
+    @foreach (var movie in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">@movie.Title</h5>
+                    <p class="card-text">
+                        <span class="badge bg-primary">@movie.Genre</span>
+                        @if (movie.IsAvailable)
+                        {
+                            <span class="badge bg-success">Available (@movie.Quantity)</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Unavailable</span>
+                        }
+                    </p>
+                    <a asp-action="Details" asp-route-id="@movie.Id" class="btn btn-primary">Details</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
