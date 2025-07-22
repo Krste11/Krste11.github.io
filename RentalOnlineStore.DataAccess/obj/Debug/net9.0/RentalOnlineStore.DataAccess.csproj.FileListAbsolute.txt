@@ -1,0 +1,17 @@
+C:\Users\angel\Desktop\RentalOnlineStore\RentalOnlineStore.DataAccess\bin\Debug\net9.0\RentalOnlineStore.DataAccess.deps.json
+C:\Users\angel\Desktop\RentalOnlineStore\RentalOnlineStore.DataAccess\bin\Debug\net9.0\RentalOnlineStore.DataAccess.runtimeconfig.json
+C:\Users\angel\Desktop\RentalOnlineStore\RentalOnlineStore.DataAccess\bin\Debug\net9.0\RentalOnlineStore.DataAccess.dll
+C:\Users\angel\Desktop\RentalOnlineStore\RentalOnlineStore.DataAccess\bin\Debug\net9.0\RentalOnlineStore.DataAccess.pdb
+C:\Users\angel\Desktop\RentalOnlineStore\RentalOnlineStore.DataAccess\bin\Debug\net9.0\RentalOnlineStore.Domain.dll
+C:\Users\angel\Desktop\RentalOnlineStore\RentalOnlineStore.DataAccess\bin\Debug\net9.0\RentalOnlineStore.Domain.pdb
+C:\Users\angel\Desktop\RentalOnlineStore\RentalOnlineStore.DataAccess\obj\Debug\net9.0\RentalOnlineStore.DataAccess.csproj.AssemblyReference.cache
+C:\Users\angel\Desktop\RentalOnlineStore\RentalOnlineStore.DataAccess\obj\Debug\net9.0\RentalOnlineStore.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angel\Desktop\RentalOnlineStore\RentalOnlineStore.DataAccess\obj\Debug\net9.0\RentalOnlineStore.DataAccess.AssemblyInfoInputs.cache
+C:\Users\angel\Desktop\RentalOnlineStore\RentalOnlineStore.DataAccess\obj\Debug\net9.0\RentalOnlineStore.DataAccess.AssemblyInfo.cs
+C:\Users\angel\Desktop\RentalOnlineStore\RentalOnlineStore.DataAccess\obj\Debug\net9.0\RentalOnlineStore.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\RentalOnlineStore\RentalOnlineStore.DataAccess\obj\Debug\net9.0\RentalOn.CB7A9C3B.Up2Date
+C:\Users\angel\Desktop\RentalOnlineStore\RentalOnlineStore.DataAccess\obj\Debug\net9.0\RentalOnlineStore.DataAccess.dll
+C:\Users\angel\Desktop\RentalOnlineStore\RentalOnlineStore.DataAccess\obj\Debug\net9.0\refint\RentalOnlineStore.DataAccess.dll
+C:\Users\angel\Desktop\RentalOnlineStore\RentalOnlineStore.DataAccess\obj\Debug\net9.0\RentalOnlineStore.DataAccess.pdb
+C:\Users\angel\Desktop\RentalOnlineStore\RentalOnlineStore.DataAccess\obj\Debug\net9.0\RentalOnlineStore.DataAccess.genruntimeconfig.cache
+C:\Users\angel\Desktop\RentalOnlineStore\RentalOnlineStore.DataAccess\obj\Debug\net9.0\ref\RentalOnlineStore.DataAccess.dll
