@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "on5vBEvqULU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\angel\\Desktop\\4_homework\\RentalOnlineStore\\RentalOnlineStore.Domain\\RentalOnlineStore.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\angel\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.300\\microsoft.net.sdk.compilers.toolset.9.0.300.nupkg.sha512"
+  ],
+  "logs": []
+}
