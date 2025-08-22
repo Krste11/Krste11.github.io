@@ -1,0 +1,15 @@
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Dtos\bin\Debug\net8.0\Avenga.NoteApp.Dtos.deps.json
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Dtos\bin\Debug\net8.0\Avenga.NoteApp.Dtos.dll
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Dtos\bin\Debug\net8.0\Avenga.NoteApp.Dtos.pdb
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Dtos\bin\Debug\net8.0\Avenga.NoteApp.Domain.dll
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Dtos\bin\Debug\net8.0\Avenga.NoteApp.Domain.pdb
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Dtos\obj\Debug\net8.0\Avenga.NoteApp.Dtos.csproj.AssemblyReference.cache
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Dtos\obj\Debug\net8.0\Avenga.NoteApp.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Dtos\obj\Debug\net8.0\Avenga.NoteApp.Dtos.AssemblyInfoInputs.cache
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Dtos\obj\Debug\net8.0\Avenga.NoteApp.Dtos.AssemblyInfo.cs
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Dtos\obj\Debug\net8.0\Avenga.NoteApp.Dtos.csproj.CoreCompileInputs.cache
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Dtos\obj\Debug\net8.0\Avenga.N.EE4B49F2.Up2Date
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Dtos\obj\Debug\net8.0\Avenga.NoteApp.Dtos.dll
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Dtos\obj\Debug\net8.0\refint\Avenga.NoteApp.Dtos.dll
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Dtos\obj\Debug\net8.0\Avenga.NoteApp.Dtos.pdb
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Dtos\obj\Debug\net8.0\ref\Avenga.NoteApp.Dtos.dll
