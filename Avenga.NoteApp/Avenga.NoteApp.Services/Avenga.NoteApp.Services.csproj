@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Avenga.NoteApp.DataAccess\Avenga.NoteApp.DataAccess.csproj" />
+    <ProjectReference Include="..\Avenga.NoteApp.Mappers\Avenga.NoteApp.Mappers.csproj" />
+    <ProjectReference Include="..\Avenga.NoteApp.Shared\Avenga.NoteApp.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

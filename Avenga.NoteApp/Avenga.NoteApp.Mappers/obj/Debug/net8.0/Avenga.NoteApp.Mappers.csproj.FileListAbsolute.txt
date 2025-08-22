@@ -1,0 +1,17 @@
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Mappers\bin\Debug\net8.0\Avenga.NoteApp.Mappers.deps.json
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Mappers\bin\Debug\net8.0\Avenga.NoteApp.Mappers.dll
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Mappers\bin\Debug\net8.0\Avenga.NoteApp.Mappers.pdb
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Mappers\bin\Debug\net8.0\Avenga.NoteApp.Domain.dll
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Mappers\bin\Debug\net8.0\Avenga.NoteApp.Dtos.dll
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Mappers\bin\Debug\net8.0\Avenga.NoteApp.Dtos.pdb
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Mappers\bin\Debug\net8.0\Avenga.NoteApp.Domain.pdb
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Mappers\obj\Debug\net8.0\Avenga.NoteApp.Mappers.csproj.AssemblyReference.cache
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Mappers\obj\Debug\net8.0\Avenga.NoteApp.Mappers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Mappers\obj\Debug\net8.0\Avenga.NoteApp.Mappers.AssemblyInfoInputs.cache
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Mappers\obj\Debug\net8.0\Avenga.NoteApp.Mappers.AssemblyInfo.cs
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Mappers\obj\Debug\net8.0\Avenga.NoteApp.Mappers.csproj.CoreCompileInputs.cache
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Mappers\obj\Debug\net8.0\Avenga.N.5C80299A.Up2Date
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Mappers\obj\Debug\net8.0\Avenga.NoteApp.Mappers.dll
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Mappers\obj\Debug\net8.0\refint\Avenga.NoteApp.Mappers.dll
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Mappers\obj\Debug\net8.0\Avenga.NoteApp.Mappers.pdb
+C:\Users\Angel\Desktop\excersice\Avenga.NoteApp\Avenga.NoteApp.Mappers\obj\Debug\net8.0\ref\Avenga.NoteApp.Mappers.dll
