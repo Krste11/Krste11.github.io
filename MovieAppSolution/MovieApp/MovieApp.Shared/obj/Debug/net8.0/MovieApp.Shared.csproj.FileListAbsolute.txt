@@ -1,0 +1,14 @@
+C:\Users\Angel\Desktop\excersice\MovieApp\MovieApp.Shared\bin\Debug\net8.0\MovieApp.Shared.deps.json
+C:\Users\Angel\Desktop\excersice\MovieApp\MovieApp.Shared\bin\Debug\net8.0\MovieApp.Shared.runtimeconfig.json
+C:\Users\Angel\Desktop\excersice\MovieApp\MovieApp.Shared\bin\Debug\net8.0\MovieApp.Shared.dll
+C:\Users\Angel\Desktop\excersice\MovieApp\MovieApp.Shared\bin\Debug\net8.0\MovieApp.Shared.pdb
+C:\Users\Angel\Desktop\excersice\MovieApp\MovieApp.Shared\obj\Debug\net8.0\MovieApp.Shared.csproj.AssemblyReference.cache
+C:\Users\Angel\Desktop\excersice\MovieApp\MovieApp.Shared\obj\Debug\net8.0\MovieApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel\Desktop\excersice\MovieApp\MovieApp.Shared\obj\Debug\net8.0\MovieApp.Shared.AssemblyInfoInputs.cache
+C:\Users\Angel\Desktop\excersice\MovieApp\MovieApp.Shared\obj\Debug\net8.0\MovieApp.Shared.AssemblyInfo.cs
+C:\Users\Angel\Desktop\excersice\MovieApp\MovieApp.Shared\obj\Debug\net8.0\MovieApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Angel\Desktop\excersice\MovieApp\MovieApp.Shared\obj\Debug\net8.0\MovieApp.Shared.dll
+C:\Users\Angel\Desktop\excersice\MovieApp\MovieApp.Shared\obj\Debug\net8.0\refint\MovieApp.Shared.dll
+C:\Users\Angel\Desktop\excersice\MovieApp\MovieApp.Shared\obj\Debug\net8.0\MovieApp.Shared.pdb
+C:\Users\Angel\Desktop\excersice\MovieApp\MovieApp.Shared\obj\Debug\net8.0\MovieApp.Shared.genruntimeconfig.cache
+C:\Users\Angel\Desktop\excersice\MovieApp\MovieApp.Shared\obj\Debug\net8.0\ref\MovieApp.Shared.dll
