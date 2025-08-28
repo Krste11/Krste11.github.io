@@ -1,0 +1,17 @@
+C:\Users\Angel\Desktop\excersice\WorkShopPart2\MovieApp.Dtos\bin\Debug\net8.0\MovieApp.Dtos.deps.json
+C:\Users\Angel\Desktop\excersice\WorkShopPart2\MovieApp.Dtos\bin\Debug\net8.0\MovieApp.Dtos.runtimeconfig.json
+C:\Users\Angel\Desktop\excersice\WorkShopPart2\MovieApp.Dtos\bin\Debug\net8.0\MovieApp.Dtos.dll
+C:\Users\Angel\Desktop\excersice\WorkShopPart2\MovieApp.Dtos\bin\Debug\net8.0\MovieApp.Dtos.pdb
+C:\Users\Angel\Desktop\excersice\WorkShopPart2\MovieApp.Dtos\bin\Debug\net8.0\MovieApp.Domain.dll
+C:\Users\Angel\Desktop\excersice\WorkShopPart2\MovieApp.Dtos\bin\Debug\net8.0\MovieApp.Domain.pdb
+C:\Users\Angel\Desktop\excersice\WorkShopPart2\MovieApp.Dtos\obj\Debug\net8.0\MovieApp.Dtos.csproj.AssemblyReference.cache
+C:\Users\Angel\Desktop\excersice\WorkShopPart2\MovieApp.Dtos\obj\Debug\net8.0\MovieApp.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel\Desktop\excersice\WorkShopPart2\MovieApp.Dtos\obj\Debug\net8.0\MovieApp.Dtos.AssemblyInfoInputs.cache
+C:\Users\Angel\Desktop\excersice\WorkShopPart2\MovieApp.Dtos\obj\Debug\net8.0\MovieApp.Dtos.AssemblyInfo.cs
+C:\Users\Angel\Desktop\excersice\WorkShopPart2\MovieApp.Dtos\obj\Debug\net8.0\MovieApp.Dtos.csproj.CoreCompileInputs.cache
+C:\Users\Angel\Desktop\excersice\WorkShopPart2\MovieApp.Dtos\obj\Debug\net8.0\MovieApp.5F825BAF.Up2Date
+C:\Users\Angel\Desktop\excersice\WorkShopPart2\MovieApp.Dtos\obj\Debug\net8.0\MovieApp.Dtos.dll
+C:\Users\Angel\Desktop\excersice\WorkShopPart2\MovieApp.Dtos\obj\Debug\net8.0\refint\MovieApp.Dtos.dll
+C:\Users\Angel\Desktop\excersice\WorkShopPart2\MovieApp.Dtos\obj\Debug\net8.0\MovieApp.Dtos.pdb
+C:\Users\Angel\Desktop\excersice\WorkShopPart2\MovieApp.Dtos\obj\Debug\net8.0\MovieApp.Dtos.genruntimeconfig.cache
+C:\Users\Angel\Desktop\excersice\WorkShopPart2\MovieApp.Dtos\obj\Debug\net8.0\ref\MovieApp.Dtos.dll
