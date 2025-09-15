@@ -1,0 +1,201 @@
+2025-09-15 21:56:06.773 +02:00 [INF] Executed DbCommand (1,191ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [NotesAppDatabaseAuthFinal];
+2025-09-15 21:56:07.692 +02:00 [INF] Executed DbCommand (910ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [NotesAppDatabaseAuthFinal] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2025-09-15 21:56:07.703 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-09-15 21:56:07.797 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2025-09-15 21:56:07.799 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-09-15 21:56:07.807 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-09-15 21:56:07.864 +02:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-09-15 21:56:07.872 +02:00 [INF] Applying migration '20250915195556_Init'.
+2025-09-15 21:56:07.943 +02:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [Id] int NOT NULL IDENTITY,
+    [FirstName] nvarchar(50) NULL,
+    [LastName] nvarchar(50) NULL,
+    [Username] nvarchar(30) NOT NULL,
+    [Password] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([Id])
+);
+2025-09-15 21:56:07.945 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Notes] (
+    [Id] int NOT NULL IDENTITY,
+    [Text] nvarchar(100) NOT NULL,
+    [Priority] int NOT NULL,
+    [Tag] int NOT NULL,
+    [UserId] int NOT NULL,
+    CONSTRAINT [PK_Notes] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Notes_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
+);
+2025-09-15 21:56:08.244 +02:00 [INF] Executed DbCommand (298ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'FirstName', N'LastName', N'Password', N'Username') AND [object_id] = OBJECT_ID(N'[Users]'))
+    SET IDENTITY_INSERT [Users] ON;
+INSERT INTO [Users] ([Id], [FirstName], [LastName], [Password], [Username])
+VALUES (1, N'John', N'Doe', N'12345', N'johndoe'),
+(2, N'Jane', N'Smith', N'54321', N'janesmith');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'FirstName', N'LastName', N'Password', N'Username') AND [object_id] = OBJECT_ID(N'[Users]'))
+    SET IDENTITY_INSERT [Users] OFF;
+2025-09-15 21:56:08.268 +02:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Priority', N'Tag', N'Text', N'UserId') AND [object_id] = OBJECT_ID(N'[Notes]'))
+    SET IDENTITY_INSERT [Notes] ON;
+INSERT INTO [Notes] ([Id], [Priority], [Tag], [Text], [UserId])
+VALUES (1, 3, 1, N'Finish the project report', 1),
+(2, 2, 2, N'Go to the gym', 1),
+(3, 1, 3, N'Call friends for dinner', 2);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Priority', N'Tag', N'Text', N'UserId') AND [object_id] = OBJECT_ID(N'[Notes]'))
+    SET IDENTITY_INSERT [Notes] OFF;
+2025-09-15 21:56:08.514 +02:00 [INF] Executed DbCommand (246ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Notes_UserId] ON [Notes] ([UserId]);
+2025-09-15 21:56:08.515 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250915195556_Init', N'8.0.20');
+2025-09-15 21:56:43.298 +02:00 [INF] User profile is available. Using 'C:\Users\Angel\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-15 21:56:43.349 +02:00 [INF] Creating key {9b79f85e-4e20-45f6-a96a-1a639a3808ab} with creation date 2025-09-15 19:56:43Z, activation date 2025-09-15 19:56:43Z, and expiration date 2025-12-14 19:56:43Z.
+2025-09-15 21:56:43.355 +02:00 [INF] Writing data to file 'C:\Users\Angel\AppData\Local\ASP.NET\DataProtection-Keys\key-9b79f85e-4e20-45f6-a96a-1a639a3808ab.xml'.
+2025-09-15 21:56:43.446 +02:00 [WRN] The WebRootPath was not found: C:\Users\Angel\Desktop\NotesApp\NotesApp\wwwroot. Static files may be unavailable.
+2025-09-15 21:56:43.725 +02:00 [INF] Now listening on: https://localhost:7293
+2025-09-15 21:56:43.725 +02:00 [INF] Now listening on: http://localhost:5199
+2025-09-15 21:56:43.905 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-15 21:56:43.905 +02:00 [INF] Hosting environment: Development
+2025-09-15 21:56:43.905 +02:00 [INF] Content root path: C:\Users\Angel\Desktop\NotesApp\NotesApp
+2025-09-15 21:56:44.773 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger - null null
+2025-09-15 21:56:44.931 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger - 301 0 null 167.0249ms
+2025-09-15 21:56:44.937 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/index.html - null null
+2025-09-15 21:56:44.992 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/index.html - 200 null text/html;charset=utf-8 55.569ms
+2025-09-15 21:56:45.000 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/swagger-ui.css - null null
+2025-09-15 21:56:45.000 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/swagger-ui-bundle.js - null null
+2025-09-15 21:56:45.001 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-15 21:56:45.007 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-15 21:56:45.017 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 10.2543ms
+2025-09-15 21:56:45.020 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7293/_vs/browserLink - null null
+2025-09-15 21:56:45.048 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-09-15 21:56:45.048 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-09-15 21:56:45.049 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/swagger-ui.css - 200 152034 text/css 49.887ms
+2025-09-15 21:56:45.049 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 49.0716ms
+2025-09-15 21:56:45.092 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-09-15 21:56:45.092 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 92.0985ms
+2025-09-15 21:56:45.110 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7293/_vs/browserLink - 200 null text/javascript; charset=UTF-8 89.8466ms
+2025-09-15 21:56:45.270 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - null null
+2025-09-15 21:56:45.286 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/favicon-32x32.png - null null
+2025-09-15 21:56:45.286 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-09-15 21:56:45.287 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/favicon-32x32.png - 200 628 image/png 1.1349ms
+2025-09-15 21:56:45.288 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.0456ms
+2025-09-15 21:57:17.914 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7293/api/Users/register - application/json 125
+2025-09-15 21:57:17.975 +02:00 [INF] Executing endpoint 'NotesApp.Controllers.UsersController.Register (NotesApp)'
+2025-09-15 21:57:17.990 +02:00 [INF] Route matched with {action = "Register", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(NotesApp.Dtos.UserDtos.RegisterUserDto) on controller NotesApp.Controllers.UsersController (NotesApp).
+2025-09-15 21:57:18.141 +02:00 [INF] Registration model info: FirstName: Angel, LastName: Krstevski
+2025-09-15 21:57:19.028 +02:00 [INF] Executed DbCommand (64ms) [Parameters=[@__ToLower_0='?' (Size = 30)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE LOWER([u].[Username]) = @__ToLower_0
+2025-09-15 21:57:19.147 +02:00 [INF] Executed DbCommand (34ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (Size = 4000), @p3='?' (Size = 30)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([FirstName], [LastName], [Password], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-09-15 21:57:19.161 +02:00 [INF] Successfully registered Krste
+2025-09-15 21:57:19.164 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-09-15 21:57:19.166 +02:00 [INF] Executed action NotesApp.Controllers.UsersController.Register (NotesApp) in 1173.645ms
+2025-09-15 21:57:19.167 +02:00 [INF] Executed endpoint 'NotesApp.Controllers.UsersController.Register (NotesApp)'
+2025-09-15 21:57:19.172 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7293/api/Users/register - 201 null text/plain; charset=utf-8 1257.8827ms
+2025-09-15 21:57:35.347 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7293/api/Users/login - application/json 46
+2025-09-15 21:57:35.351 +02:00 [INF] Executing endpoint 'NotesApp.Controllers.UsersController.LoginUser (NotesApp)'
+2025-09-15 21:57:35.355 +02:00 [INF] Route matched with {action = "LoginUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUser(NotesApp.Dtos.UserDtos.LoginUserDto) on controller NotesApp.Controllers.UsersController (NotesApp).
+2025-09-15 21:57:35.373 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 30)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE LOWER([u].[Username]) = @__ToLower_0
+2025-09-15 21:57:35.396 +02:00 [INF] The user with username Krste just logged in the app!
+2025-09-15 21:57:35.396 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-09-15 21:57:35.396 +02:00 [INF] Executed action NotesApp.Controllers.UsersController.LoginUser (NotesApp) in 41.1181ms
+2025-09-15 21:57:35.396 +02:00 [INF] Executed endpoint 'NotesApp.Controllers.UsersController.LoginUser (NotesApp)'
+2025-09-15 21:57:35.396 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7293/api/Users/login - 200 null text/plain; charset=utf-8 49.4835ms
+2025-09-15 21:58:02.496 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7293/api/Notes - null null
+2025-09-15 21:58:02.498 +02:00 [INF] Executing endpoint 'NotesApp.Controllers.NotesController.GetAllNotes (NotesApp)'
+2025-09-15 21:58:02.499 +02:00 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[NotesApp.Dtos.NoteDtos.NoteDto]] GetAllNotes() on controller NotesApp.Controllers.NotesController (NotesApp).
+2025-09-15 21:58:02.562 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-09-15 21:58:02.562 +02:00 [INF] Executed action NotesApp.Controllers.NotesController.GetAllNotes (NotesApp) in 63.7269ms
+2025-09-15 21:58:02.563 +02:00 [INF] Executed endpoint 'NotesApp.Controllers.NotesController.GetAllNotes (NotesApp)'
+2025-09-15 21:58:02.563 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7293/api/Notes - 500 null text/plain; charset=utf-8 67.1276ms
+2025-09-15 21:58:17.656 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7293/api/Notes - application/json 66
+2025-09-15 21:58:17.657 +02:00 [INF] Executing endpoint 'NotesApp.Controllers.NotesController.AddNote (NotesApp)'
+2025-09-15 21:58:17.658 +02:00 [INF] Route matched with {action = "AddNote", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddNote(NotesApp.Dtos.NoteDtos.AddNoteDto) on controller NotesApp.Controllers.NotesController (NotesApp).
+2025-09-15 21:58:17.686 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-09-15 21:58:17.686 +02:00 [INF] Executed action NotesApp.Controllers.NotesController.AddNote (NotesApp) in 28.2396ms
+2025-09-15 21:58:17.686 +02:00 [INF] Executed endpoint 'NotesApp.Controllers.NotesController.AddNote (NotesApp)'
+2025-09-15 21:58:17.686 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7293/api/Notes - 500 null text/plain; charset=utf-8 30.0312ms
+2025-09-15 21:58:28.769 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7293/api/Notes - application/json 62
+2025-09-15 21:58:28.769 +02:00 [INF] Executing endpoint 'NotesApp.Controllers.NotesController.AddNote (NotesApp)'
+2025-09-15 21:58:28.769 +02:00 [INF] Route matched with {action = "AddNote", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddNote(NotesApp.Dtos.NoteDtos.AddNoteDto) on controller NotesApp.Controllers.NotesController (NotesApp).
+2025-09-15 21:58:28.789 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-09-15 21:58:28.789 +02:00 [INF] Executed action NotesApp.Controllers.NotesController.AddNote (NotesApp) in 19.311ms
+2025-09-15 21:58:28.789 +02:00 [INF] Executed endpoint 'NotesApp.Controllers.NotesController.AddNote (NotesApp)'
+2025-09-15 21:58:28.789 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7293/api/Notes - 500 null text/plain; charset=utf-8 20.3232ms
+2025-09-15 21:59:57.660 +02:00 [INF] User profile is available. Using 'C:\Users\Angel\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-15 21:59:57.724 +02:00 [WRN] The WebRootPath was not found: C:\Users\Angel\Desktop\NotesApp\NotesApp\wwwroot. Static files may be unavailable.
+2025-09-15 21:59:57.888 +02:00 [INF] Now listening on: https://localhost:7293
+2025-09-15 21:59:57.888 +02:00 [INF] Now listening on: http://localhost:5199
+2025-09-15 21:59:57.957 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-15 21:59:57.957 +02:00 [INF] Hosting environment: Development
+2025-09-15 21:59:57.957 +02:00 [INF] Content root path: C:\Users\Angel\Desktop\NotesApp\NotesApp
+2025-09-15 21:59:58.198 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/index.html - null null
+2025-09-15 21:59:58.341 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/index.html - 200 null text/html;charset=utf-8 150.2296ms
+2025-09-15 21:59:58.346 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-15 21:59:58.350 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 4.3043ms
+2025-09-15 21:59:58.366 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7293/_vs/browserLink - null null
+2025-09-15 21:59:58.393 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7293/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.8946ms
+2025-09-15 21:59:58.529 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - null null
+2025-09-15 21:59:58.544 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.7611ms
+2025-09-15 22:00:16.371 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7293/api/Users/login - application/json 47
+2025-09-15 22:00:16.423 +02:00 [INF] Executing endpoint 'NotesApp.Controllers.UsersController.LoginUser (NotesApp)'
+2025-09-15 22:00:16.435 +02:00 [INF] Route matched with {action = "LoginUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUser(NotesApp.Dtos.UserDtos.LoginUserDto) on controller NotesApp.Controllers.UsersController (NotesApp).
+2025-09-15 22:00:17.375 +02:00 [INF] Executed DbCommand (35ms) [Parameters=[@__ToLower_0='?' (Size = 30)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE LOWER([u].[Username]) = @__ToLower_0
+2025-09-15 22:00:17.431 +02:00 [ERR] Internal Exception: User was not found
+2025-09-15 22:00:17.435 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-09-15 22:00:17.437 +02:00 [INF] Executed action NotesApp.Controllers.UsersController.LoginUser (NotesApp) in 1000.4061ms
+2025-09-15 22:00:17.438 +02:00 [INF] Executed endpoint 'NotesApp.Controllers.UsersController.LoginUser (NotesApp)'
+2025-09-15 22:00:17.442 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7293/api/Users/login - 500 null text/plain; charset=utf-8 1070.6779ms
+2025-09-15 22:00:35.406 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7293/api/Users/login - application/json 46
+2025-09-15 22:00:35.409 +02:00 [INF] Executing endpoint 'NotesApp.Controllers.UsersController.LoginUser (NotesApp)'
+2025-09-15 22:00:35.410 +02:00 [INF] Route matched with {action = "LoginUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUser(NotesApp.Dtos.UserDtos.LoginUserDto) on controller NotesApp.Controllers.UsersController (NotesApp).
+2025-09-15 22:00:35.429 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ToLower_0='?' (Size = 30)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE LOWER([u].[Username]) = @__ToLower_0
+2025-09-15 22:00:35.471 +02:00 [INF] The user with username Krste just logged in the app!
+2025-09-15 22:00:35.471 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-09-15 22:00:35.471 +02:00 [INF] Executed action NotesApp.Controllers.UsersController.LoginUser (NotesApp) in 61.4718ms
+2025-09-15 22:00:35.472 +02:00 [INF] Executed endpoint 'NotesApp.Controllers.UsersController.LoginUser (NotesApp)'
+2025-09-15 22:00:35.472 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7293/api/Users/login - 200 null text/plain; charset=utf-8 66.3707ms
+2025-09-15 22:03:20.786 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7293/api/Notes - application/json 66
+2025-09-15 22:03:20.790 +02:00 [INF] Executing endpoint 'NotesApp.Controllers.NotesController.AddNote (NotesApp)'
+2025-09-15 22:03:20.794 +02:00 [INF] Route matched with {action = "AddNote", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddNote(NotesApp.Dtos.NoteDtos.AddNoteDto) on controller NotesApp.Controllers.NotesController (NotesApp).
+2025-09-15 22:03:20.821 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-09-15 22:03:20.821 +02:00 [INF] Executed action NotesApp.Controllers.NotesController.AddNote (NotesApp) in 27.0723ms
+2025-09-15 22:03:20.821 +02:00 [INF] Executed endpoint 'NotesApp.Controllers.NotesController.AddNote (NotesApp)'
+2025-09-15 22:03:20.821 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7293/api/Notes - 500 null text/plain; charset=utf-8 34.9552ms
+2025-09-15 22:03:30.182 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7293/api/Notes - null null
+2025-09-15 22:03:30.183 +02:00 [INF] Executing endpoint 'NotesApp.Controllers.NotesController.GetAllNotes (NotesApp)'
+2025-09-15 22:03:30.184 +02:00 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[NotesApp.Dtos.NoteDtos.NoteDto]] GetAllNotes() on controller NotesApp.Controllers.NotesController (NotesApp).
+2025-09-15 22:03:30.203 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-09-15 22:03:30.203 +02:00 [INF] Executed action NotesApp.Controllers.NotesController.GetAllNotes (NotesApp) in 18.8038ms
+2025-09-15 22:03:30.203 +02:00 [INF] Executed endpoint 'NotesApp.Controllers.NotesController.GetAllNotes (NotesApp)'
+2025-09-15 22:03:30.203 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7293/api/Notes - 500 null text/plain; charset=utf-8 21.2829ms
