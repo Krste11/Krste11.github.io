@@ -1,0 +1,16 @@
+C:\Users\angel\Desktop\from class Angular\5\mkwd13-wdel-ng-net\Server\PizzaApp\PizzaApp.Dtos\bin\Debug\net8.0\PizzaApp.Dtos.deps.json
+C:\Users\angel\Desktop\from class Angular\5\mkwd13-wdel-ng-net\Server\PizzaApp\PizzaApp.Dtos\bin\Debug\net8.0\PizzaApp.Dtos.dll
+C:\Users\angel\Desktop\from class Angular\5\mkwd13-wdel-ng-net\Server\PizzaApp\PizzaApp.Dtos\bin\Debug\net8.0\PizzaApp.Dtos.pdb
+C:\Users\angel\Desktop\from class Angular\5\mkwd13-wdel-ng-net\Server\PizzaApp\PizzaApp.Dtos\bin\Debug\net8.0\PizzaApp.Domain.dll
+C:\Users\angel\Desktop\from class Angular\5\mkwd13-wdel-ng-net\Server\PizzaApp\PizzaApp.Dtos\bin\Debug\net8.0\PizzaApp.Domain.pdb
+C:\Users\angel\Desktop\from class Angular\5\mkwd13-wdel-ng-net\Server\PizzaApp\PizzaApp.Dtos\obj\Debug\net8.0\PizzaApp.Dtos.csproj.AssemblyReference.cache
+C:\Users\angel\Desktop\from class Angular\5\mkwd13-wdel-ng-net\Server\PizzaApp\PizzaApp.Dtos\obj\Debug\net8.0\PizzaApp.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angel\Desktop\from class Angular\5\mkwd13-wdel-ng-net\Server\PizzaApp\PizzaApp.Dtos\obj\Debug\net8.0\PizzaApp.Dtos.AssemblyInfoInputs.cache
+C:\Users\angel\Desktop\from class Angular\5\mkwd13-wdel-ng-net\Server\PizzaApp\PizzaApp.Dtos\obj\Debug\net8.0\PizzaApp.Dtos.AssemblyInfo.cs
+C:\Users\angel\Desktop\from class Angular\5\mkwd13-wdel-ng-net\Server\PizzaApp\PizzaApp.Dtos\obj\Debug\net8.0\PizzaApp.Dtos.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\from class Angular\5\mkwd13-wdel-ng-net\Server\PizzaApp\PizzaApp.Dtos\obj\Debug\net8.0\PizzaApp.Dtos.sourcelink.json
+C:\Users\angel\Desktop\from class Angular\5\mkwd13-wdel-ng-net\Server\PizzaApp\PizzaApp.Dtos\obj\Debug\net8.0\PizzaApp.20C7458D.Up2Date
+C:\Users\angel\Desktop\from class Angular\5\mkwd13-wdel-ng-net\Server\PizzaApp\PizzaApp.Dtos\obj\Debug\net8.0\PizzaApp.Dtos.dll
+C:\Users\angel\Desktop\from class Angular\5\mkwd13-wdel-ng-net\Server\PizzaApp\PizzaApp.Dtos\obj\Debug\net8.0\refint\PizzaApp.Dtos.dll
+C:\Users\angel\Desktop\from class Angular\5\mkwd13-wdel-ng-net\Server\PizzaApp\PizzaApp.Dtos\obj\Debug\net8.0\PizzaApp.Dtos.pdb
+C:\Users\angel\Desktop\from class Angular\5\mkwd13-wdel-ng-net\Server\PizzaApp\PizzaApp.Dtos\obj\Debug\net8.0\ref\PizzaApp.Dtos.dll
